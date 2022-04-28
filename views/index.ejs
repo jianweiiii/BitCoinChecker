@@ -4,16 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/styles.css">
+    <link rel="stylesheet" href="/styles.css">
     <title>Bitcoin</title>
 </head>
 <body>
+    <main>
+        <div class="wrapper">
+            <div class="header">
+                <h1>
+                    Crypto Checker
+                </h1>
 
-    
+                <img src="/images/logo.png"  class="logo">
+            </div>
+            
+            <section class="container">
+                <form method="post">
+                    <div class="coin-getter">
+                        <label for="coin">Coin :</label>
+                        <input type="text" name="currency" id="coin" placeholder="BTC">
+                    </div>
 
+                    <div class="currency-getter">
+                        <label for="currency">Currency :</label>
+                        <input type="text" name="fiat" id="currency" placeholder="USD">
+                    </div>
 
+                    <input type="submit" id="submit" value="Get Price">
 
+                </form>
 
+                <div class="output">
+
+                    <span class="coin-name">
+                        <%=currency + fiat%> 
+                    </span>
+
+                    <div class="output-getter">
+                        <%=price + fiat %>
+                    </div>
+                        
+                </div>
+            </section>
+
+            <div class="copyright">
+
+                <p> Developed using
+                <a href="https://developers.coinbase.com/" class="api"> CoinBase API</a>
+                </p>
+
+                <a href="https://github.com/jianweiiii/BitCoinChecker"> <img src="/images/github.jpg"  class="github"></a>
+
+            </div>
+
+        </div>
+
+    </main>
 
 </body>
 </html>
