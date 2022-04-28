@@ -25,10 +25,9 @@ app.post("/", async (req, res) => {
 
 
 app.get("/", async (req, res) => {
-    // caller(currency, fiat);
-    console.log(req.query);
-
-    res.render("index.ejs");
+    const price = await caller("BTC", "USD");
+    const obj = {price:"", currency: "BTC", fiat: "USD"};
+    res.render("index.ejs", obj);
 })
 
 
