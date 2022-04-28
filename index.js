@@ -25,8 +25,7 @@ app.post("/", async (req, res) => {
 
 
 app.get("/", async (req, res) => {
-    const price = await caller("BTC", "USD");
-    const obj = {price:"", currency: "BTC", fiat: "USD"};
+    const obj = {price:"", currency: "", fiat: ""};
     res.render("index.ejs", obj);
 })
 
