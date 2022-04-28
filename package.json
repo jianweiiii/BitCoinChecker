@@ -3,5 +3,29 @@
     "axios": "^0.27.1",
     "ejs": "^3.1.7",
     "express": "^4.18.0"
+  },
+  "name": "bitcoin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jianweiiii/BitCoinChecker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jianweiiii/BitCoinChecker/issues"
+  },
+  "homepage": "https://github.com/jianweiiii/BitCoinChecker#readme",
+  "description": "",
+
+  "engines": {
+    "node": "16.14.2"
   }
+
 }
